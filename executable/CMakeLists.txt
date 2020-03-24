@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(calc_time)
+add_executable(calc_time main.cpp)
+target_include_directories(calc_time  PRIVATE ../MyLibs)
+target_link_libraries(calc_time static)
+target_link_libraries(calc_time dynamic)
